@@ -1,0 +1,20 @@
+<h1> Welcome Friends! </h1>
+<ul>
+ <% if user_signed_in? %>
+ <li>
+ <%= link_to('Photos', photos_path) %>
+ </li>
+ <li>
+ <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+ </li>
+ 
+ 
+ 
+ 
+ <% else %>
+ You are new user please login to the system
+ <li>
+ <%= link_to('Login', new_user_session_path) %>
+ </li>
+ <% end %>
+</ul>
