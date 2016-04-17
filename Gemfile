@@ -37,7 +37,7 @@ gem 'devise'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-   gem 'sqlite3'
+   gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'pry'
 end
 
