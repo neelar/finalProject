@@ -1,20 +1,22 @@
-<h1> Welcome Friends! </h1>
-<ul>
+<h1> This is an eAlbum Personal </h1>
+
+<div class="row">
+ <div class="col-xs-12 col-md-8 col-xs-6 col-md-4">
+  
+
  <% if user_signed_in? %>
- <li>
+ <button  class="btn btn-default">
  <%= link_to('Photos', photos_path) %>
- </li>
- <li>
+ </button>
+ <button  class="btn btn-default">
  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
- </li>
- 
- 
- 
+ </button>
  
  <% else %>
- You are new user please login to the system
- <li>
+ <button  class="btn btn-default">
  <%= link_to('Login', new_user_session_path) %>
- </li>
+ </button>
  <% end %>
-</ul>
+
+</div>
+</div>
